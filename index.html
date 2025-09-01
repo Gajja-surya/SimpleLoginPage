@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>web app</title>
+
+        <style>
+            html{
+                background-color: black;
+            }
+            .header{
+                background: #0ea5e9;
+                color: aliceblue;
+                font-weight: 100;
+                font-size: 25px;
+                margin-top: 200px;
+                margin-left: 500px;
+                margin-right: 500px;
+                padding: 25px 40px;
+
+
+                border-collapse: separate; /* Important for border-radius */
+                border-spacing: 0;
+                border-radius: 20px 20px 0 0; /* top-left & top-right curved */
+                overflow: hidden;
+            }
+            .main{
+                
+                margin-left: 500px;
+                /* margin-top: 2px; */
+                background-color: white;
+                margin-right: 500px;
+
+
+
+                border-collapse: separate; /* Needed for rounded corners */
+                border-spacing: 0;
+                border-bottom-left-radius: 20px; 
+                border-bottom-right-radius: 20px; 
+                overflow: hidden;
+            }   
+
+            .content{
+                font-size: 20px;
+                padding-left: 25px;
+            }
+            .box{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            
+            .final{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+            }
+            #name{
+                padding-top: 15px;
+            }
+            
+                .action{
+                    margin: 20px;
+                    padding-bottom: 20px;
+
+                }
+                a{
+                    padding-left: 10px;
+                }
+                hr{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <main class="card">
+            <header class="header">WELCOME</header>
+            <div class="main">
+                <form action="page2.html">
+                    
+                    <div class="content">
+                        <div id="name"> 
+                            <label for="login">Login(username)</label>
+                        </div>
+                       
+                       <div class="box">
+                             <input type="text" name="" id="login"  placeholder="surya" required>
+                       </div>
+                    </div>
+
+                    <div class="content">
+
+                        <div>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="box">
+                            <input type="password" name="" id="password"  placeholder="......" required>
+                        </div>
+
+                    </div>
+                    <div class="final">
+                        <button type="submit">submit</button>
+                    </div>
+                </form>
+                <hr>
+                <footer class="action">
+                    <div>
+                        <span>Contact us :</span>
+                        <a href="abc@abc.com" target="_blank">abc@abc.com</a>
+                        <a href="+123-456-789" target="_blank">+123-456-789</a>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </body>
+</html>
